@@ -1,9 +1,193 @@
-<html>
-  <head>
-    <title>Ryvora Scripts</title>
-  </head>
-  <body>
-    <h1>Ryvora Scripts - Under Construction...</h1>
-    <h2>By ChipLag</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ryvora Scripts — Roblox scripts for popular games, with free and premium scripts. Updated with every game patch." />
+  <title>Ryvora Scripts</title>
+  <link rel="icon" type="image/png" href="Assets/Icon-Small-Transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <div class="bg"></div>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <img src="Assets/Icon-Small-Transparent.png" alt="Ryvora logo" />
+        <span>Ryvora <strong>Scripts</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#games">Supported Games</a></li>
+        <li><a href="#how">Getting Started</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a class="btn btn-sm btn-discord" href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.32 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.007.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          Discord
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">Free Roblox scripts · Actively updated</p>
+        <h1>Scripts built for the games you love.</h1>
+        <p class="lede">
+          Ryvora Scripts delivers reliable, performance-friendly scripts for popular Roblox games —
+          loaded in seconds from a single one-line loader. No bloat, no installs.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">Browse supported games</a>
+          <a class="btn btn-outline" href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Join the community</a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="dot"></span> Free &amp; premium scripts</div>
+          <div><span class="dot"></span> Updated with every patch</div>
+          <div><span class="dot"></span> Scripts only — no executors</div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="Assets/Icon.png" alt="Ryvora icon" />
+      </div>
+    </section>
+
+    <!-- Supported games -->
+    <section id="games" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Supported games</p>
+          <h2>Pick a game, load the script.</h2>
+          <p>Copy the one-line loader, paste it into your executor, and run. That's all it takes.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="game-head">
+            <div class="game-logo" aria-hidden="true">MM2</div>
+            <div>
+              <h3>Murder Mystery 2 <span class="game-badge">Featured</span></h3>
+              <p>The classic round-based murder mystery game. Everything you need to dominate every round.</p>
+            </div>
+          </div>
+
+<ul class="feats">
+              <li>Silent Aim</li>
+              <li>ESP</li>
+              <li>In-game UI</li>
+              <li>Unique Features</li>
+            </ul>
+
+          <div class="load-row">
+            <code id="mm2Loadstring">loadstring(game:HttpGet("https://ryvora.github.io/Assets/Loader.luau", true))()("mm2")</code>
+            <button class="btn-copy" type="button" data-copy="mm2Loadstring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <p class="game-coming">
+          <strong>More games coming soon.</strong> Suggestions are welcome — drop them in the
+          <a href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Discord server</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- How to use -->
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Getting started</p>
+          <h2>Up and running in seconds.</h2>
+          <p>Ryvora scripts run off a single shared loader, so every game works the exact same way.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Join the community</h3>
+            <p>Hop into <a href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Discord</a> for the latest scripts, changelogs, and support.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>Copy a loadstring</h3>
+            <p>Grab the one-liner from the game card above and switch the game tag, e.g. <code>("mm2")</code> for Murder Mystery 2.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Execute &amp; enjoy</h3>
+            <p>Paste it into your executor and run. The loader pulls the script and opens the interface automatically.</p>
+          </div>
+        </div>
+
+        <p class="notice">
+          <strong>Free &amp; premium:</strong> our free scripts are free forever. Premium scripts unlock with a key —
+          available through giveaways, a one-time purchase, or our content-creator program.
+          <br />
+          <strong>Note:</strong> Ryvora develops scripts only and does not distribute executors.
+          Use scripts responsibly, per game rules, and only on accounts you're willing to risk.
+        </p>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Community</p>
+          <h2>Stay connected.</h2>
+          <p>Release notes, sneak peeks, and live showcases — straight from the team.</p>
+        </div>
+
+        <div class="connect">
+          <a class="comm-card" href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">
+            <span class="icon discord">
+              <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.32 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.007.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            </span>
+            <h3>Discord</h3>
+            <p>Chat with the team, request features, and win premium keys through giveaways.</p>
+            <span class="go">Join the server <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </a>
+
+          <a class="comm-card" href="https://www.youtube.com/channel/UCax_X9d5mxyavQTdv6qXYsQ" target="_blank" rel="noopener">
+            <span class="icon youtube">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+            </span>
+            <h3>YouTube</h3>
+            <p>Watch our scripts live in action with full feature showcases and tutorials.</p>
+            <span class="go">Watch on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">
+        <img src="Assets/Icon-Small-Transparent.png" alt="Ryvora logo" />
+        Ryvora Scripts
+      </span>
+      <span>© 2026 Ryvora Scripts · Not affiliated with Roblox Corporation</span>
+      <ul class="footer-links">
+        <li><a href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Discord</a></li>
+        <li><a href="https://www.youtube.com/channel/UCax_X9d5mxyavQTdv6qXYsQ" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="toast" role="status">Loadstring copied to clipboard.</div>
+
+  <script src="app.js"></script>
+</body>
 </html>
