@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body id="top">
-  <div class="bg"></div>
-
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
       <a class="brand" href="#top">
@@ -29,6 +27,7 @@
         <li><a href="#games">Supported Games</a></li>
         <li><a href="#how">Getting Started</a></li>
         <li><a href="#community">Community</a></li>
+        <li><a href="foss.html">FOSS Docs</a></li>
         <li><a class="btn btn-sm btn-discord" href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.32 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.007.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           Discord
@@ -71,30 +70,13 @@
           <p>Copy the one-line loader, paste it into your executor, and run. That's all it takes.</p>
         </div>
 
-        <div class="game-card">
-          <div class="game-head">
-            <div class="game-logo" aria-hidden="true">MM2</div>
-            <div>
-              <h3>Murder Mystery 2 <span class="game-badge">Featured</span></h3>
-              <p>The classic round-based murder mystery game. Everything you need to dominate every round.</p>
-            </div>
-          </div>
-
-<ul class="feats">
-              <li>Silent Aim</li>
-              <li>ESP</li>
-              <li>In-game UI</li>
-              <li>Unique Features</li>
-            </ul>
-
-          <div class="load-row">
-            <code id="mm2Loadstring">loadstring(game:HttpGet("https://ryvora.github.io/Assets/Loader.luau", true))()("mm2")</code>
-            <button class="btn-copy" type="button" data-copy="mm2Loadstring">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              <span>Copy</span>
-            </button>
-          </div>
-        </div>
+        <game-script
+          name="Murder Mystery 2"
+          description="The classic round-based murder mystery game. Everything you need to dominate every round."
+          features="Silent Aim;ESP;In-game UI;Unique Features"
+          working="true"
+          id="mm2"
+          texticon="MM2"></game-script>
 
         <p class="game-coming">
           <strong>More games coming soon.</strong> Suggestions are welcome — drop them in the
@@ -180,6 +162,7 @@
       </span>
       <span>© 2026 Ryvora Scripts · Not affiliated with Roblox Corporation</span>
       <ul class="footer-links">
+        <li><a href="foss.html">FOSS Docs</a></li>
         <li><a href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Discord</a></li>
         <li><a href="https://www.youtube.com/channel/UCax_X9d5mxyavQTdv6qXYsQ" target="_blank" rel="noopener">YouTube</a></li>
       </ul>
