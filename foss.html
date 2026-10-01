@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ryvora FOSS — free and open-source Roblox libraries. Live documentation served from the GitHub wiki." />
+  <meta name="description" content="Ryvora FOSS: the open-source part of the project, documented live from the GitHub wiki. No build step, always current." />
   <title>FOSS Docs · Ryvora Scripts</title>
   <link rel="icon" type="image/png" href="Assets/Icon-Small-Transparent.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-dark.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2026.3" />
 </head>
-<body id="top">
+<body>
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
       <a class="brand" href="index.html">
@@ -22,7 +22,7 @@
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
       </button>
 
       <ul class="nav-menu" id="navMenu">
@@ -31,7 +31,7 @@
         <li><a href="index.html#community">Community</a></li>
         <li><a class="nav-active" href="foss.html" aria-current="page">FOSS Docs</a></li>
         <li><a class="btn btn-sm btn-discord" href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.32 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.007.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.078.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.078-.037A19.736 19.736 0 0 0 3.32 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.011c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.198.373.292a.077.077 0 0 1-.007.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.9 19.9 0 0 0 6.002-3.03.077.077 0 0 0 .032-.056c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           Discord
         </a></li>
       </ul>
@@ -40,13 +40,12 @@
 
   <main>
     <section class="container foss-hero">
-      <p class="eyebrow">FOSS Documentation</p>
-      <h1>Ryvora FOSS</h1>
+      <p class="sec-index">~/foss-docs</p>
+      <h1>FOSS documentation</h1>
       <p class="lede">
-        Free and open-source libraries from the team behind Ryvora.
-        This page loads its content live from the
-        <a href="https://github.com/Ryvora/FOSS/wiki" target="_blank" rel="noopener">GitHub wiki</a> —
-        no build step, always up to date.
+        Ryvora FOSS is the public, open-source part of the project. This page loads each wiki page
+        from github.com/Ryvora/FOSS at run time, so the docs update whenever the wiki updates.
+        There is no build step.
       </p>
     </section>
 
@@ -55,15 +54,14 @@
         <h3>Pages</h3>
         <ul id="wikiList" class="foss-pages"></ul>
         <a class="foss-repo" href="https://github.com/Ryvora/FOSS" target="_blank" rel="noopener">
-          View repository <span aria-hidden="true">→</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          View repository
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </a>
       </aside>
 
       <article class="foss-content">
-        <div id="wikiLoading" class="foss-state">
-          Loading page… fetching from <code>raw.githubusercontent.com/wiki/Ryvora/FOSS</code>
-        </div>
-        <div id="wikiError" class="foss-state" hidden></div>
+        <div id="wikiState" hidden></div>
         <div id="wikiBody" class="markdown-body" hidden></div>
       </article>
     </section>
@@ -75,7 +73,7 @@
         <img src="Assets/Icon-Small-Transparent.png" alt="Ryvora logo" />
         Ryvora Scripts
       </a>
-      <span>© 2026 Ryvora Scripts · Not affiliated with Roblox Corporation</span>
+      <span>Copyright 2026 Ryvora Scripts. Not affiliated with Roblox Corporation.</span>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="https://discord.gg/HRRBRpdKrj" target="_blank" rel="noopener">Discord</a></li>
@@ -84,9 +82,13 @@
     </div>
   </footer>
 
+  <div id="toast" role="status">Loadstring copied to clipboard.</div>
+
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/lib/marked.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+  <script src="icons.js"></script>
+  <script src="view.js"></script>
   <script src="app.js"></script>
   <script src="foss.js"></script>
 </body>
